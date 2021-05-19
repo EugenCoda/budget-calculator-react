@@ -41,12 +41,24 @@ body {
   padding: 20px;
 }
 
-.budget-form {
+.budget-form form {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
+
+.form-center {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+select {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .budget-items {
   display: flex;
   flex-direction: column;
@@ -56,6 +68,34 @@ body {
 }
 
 .budget-entry {
-  width: 80%;
+  width: 100%;
   margin-bottom: 10px;
+}
+
+.totals {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.alert {
+  padding: 0.75rem 1.25rem;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.alert-danger {
+  background-color: red;
+}
+
+.alert-success {
+  background-color: green;
 }
